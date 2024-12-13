@@ -31,6 +31,7 @@ jobs:
         with:
           name: test-results  # The name used to identify the artifact
           path: result.log    # Path to the log file you want to upload
+          retention-days: 5   # artifacts will be deleted after 5 days
 
   deploy:
     runs-on: ubuntu-latest
